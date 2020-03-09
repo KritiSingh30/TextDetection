@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="label.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+    </style>
+    
+</head>
+<body>
+    <h1>TEXT DETECTION</h1>
+
+    <div class="imagecontainer">
+        <!-- Image,upload button and result about the image-->
+        <div class="imagecontainer__upload">
+            <!--<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" ></p>-->
+            <input type="file" name="upload" id="file" accept="image/*" onchange="showResult( this.files[0]); loadFile(event)">
+            <p><img id="output" width="200" /></p>
+
+        </div>
+
+        <div class="imagecontainer__results">
+            <div id="imagecontainer__results-resultlabels">
+
+            </div>
+        
+           <!-- detected text -->
+        </div>
+
+        <div class="imagecontainer__previoussearches">
+            <!-- previous searches-->
+            <h3>Sample Searches</h3>
+            <div class="result-1">
+                <img src="./images/img1.jpg" alt="">
+                <p>
+                   <div class="heading">Result</div>&nbsp;NO MUSIC NO LIFE
+                </p>
+            </div>
+            <div class="result-1">
+                <img src="./images/img2.jpg" alt="">
+                <p>
+                    <div class="heading">Result</div>&nbsp;CREATE NEW GRAPHICS
+                </p>
+            </div>
+            <div class="result-1">
+                <img src="./images/sign_small.jpg" alt="">
+                <p>
+                    <div class="heading">Result</div>&nbsp;WAITING ? PLEASE TURN OFF YOUR ENGINE
+                </p>
+            </div>
+            <div class="result-1">
+                <img src="./images/img1.jpg" alt="">
+                <p>
+                    <div class="heading">Result</div>&nbsp;NO MUSIC NO LIFE
+                </p>
+            </div>
+            
+            
+        </div>
+    </div>
+
+</body>
+</html>
