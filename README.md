@@ -1,1 +1,1 @@
-Text Detection with GC Vision fgfhfhfh
+Text Detection with GC Vision
